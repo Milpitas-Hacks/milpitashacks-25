@@ -1,60 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 6.5px; 
-}
-
-::-webkit-scrollbar-track {
-    background-color: #162635; 
-    margin: -3px; 
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #ffff; 
-    border-radius: 60px; 
-    background-clip: content-box; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #a8bbbf;  
-}
-
-/* Countdown Timer Styling */
-.countdown-container {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    gap: 20px; 
-    position: absolute;
-    left: 50%; 
-    transform: translate(-50%, -50%);
-}
-
-  
-.countdown-title {
-    font-size: 8rem; 
-    font-weight: bold;
-    margin-bottom: 0; 
-    font-family: 'Rubik', sans-serif;
-    color: white;
-}
-  
- 
-/* General Reset and Body Styling */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-color: #162635; 
-    scroll-behavior: smooth;
-}
-
-/* Hero Header Styles */
+  }
+  
 header.hero-header {
     width: 100%;
     height: 100vh;
@@ -62,30 +14,19 @@ header.hero-header {
     flex-direction: column;
     justify-content: space-between;
     background-image: url('/background.jpg');
-    background-size: cover;
+    background-size: cover;  
     background-position: center;
     background-color: #1a1a1a;
     color: white;
 }
 
-/* Navigation Links */
-.link {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-family: 'Poppins', serif;
-    font-size: 24px;
-    font-weight: 500;
-}
-
 .link:hover {
-    color: #ff7f50;
+    color: #ff7f50; 
 }
-
-/* Button Styling */
+  
 .register-btn {
     display: inline-block;
-    background-color: #ff7f50;
+    background-color: #ff7f50; 
     color: white;
     padding: 12px 24px;
     font-size: 18px;
@@ -94,21 +35,21 @@ header.hero-header {
     font-weight: bold;
     transition: background-color 0.3s;
 }
-
+  
 .register-btn:hover {
-    background-color: #ff5a2b;
+    background-color: #ff5a2b; 
 }
 
-/* Burger Menu Styles */
 .burger-menu {
     display: none;
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
-    right: 2.5%;
+    right: 2.5%;  
     top: 3%;
     position: absolute;
 }
+
 
 .burger-menu span {
     width: 45px;
@@ -118,17 +59,18 @@ header.hero-header {
     transition: 0.3s ease-in-out;
     margin-right: 3%;
     margin-top: 3%;
-}
+}  
 
-/* Desktop Layout */
-@media screen and (min-width: 1341px) {
+@media screen and (min-width: 769px) {
+    
     .hyperlinks {
         display: flex;
         gap: 20px;
         position: relative;
         top: 0;
-        right: 0;
+        right: 0; 
     }
+    
 
     .location-date-container {
         display: flex;
@@ -136,13 +78,12 @@ header.hero-header {
         align-items: center;
         margin-top: 10px;
         text-align: left;
-        color: #ffff;
+        color: #ffff; 
         font-family: 'Rubik', serif;
         font-weight: 500;
     }
-
-    .location,
-    .date {
+    
+    .location, .date {
         font-size: 20px;
         margin: 0;
     }
@@ -161,23 +102,33 @@ header.hero-header {
         max-height: 35%;
         max-width: 300px;
         width: 80%;
+    
     }
 
     .register-btn-container {
-        position: absolute;
-        right: 2.5%;
-        bottom: 3.5%;
+        position: absolute;  
+        right: 2.5%;           
+        bottom: 3.5%; 
     }
 
     .hero-content {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
+        justify-content: flex-end;  
+        height: 100%; 
         padding: 0% 0% 3% 2%;
         position: relative;
     }
 
+    .link {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: 'Poppins', serif;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
     .hero-bar {
         display: flex;
         justify-content: space-between;
@@ -185,49 +136,14 @@ header.hero-header {
         padding: 2% 3%;
         position: relative;
     }
-
+    
     .logo-container .mh-logo {
         max-height: 50px;
-    }
-
-     /* Countdown Timer  */
-  .countdown-timer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px; 
-  }
-  
-  .time-box {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    width: 220px; 
-    height: 260px; 
-    background-color: #1d2b3a; 
-    border-radius: 8px; 
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
-  
-  .time-box span {
-    font-size: 6rem; 
-    font-weight: bold;
-    color: #f9c74f; 
-  }
-  
-  .time-box .label {
-    margin-top: 5px; 
-    font-size: 2rem; 
-    color: white; 
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-  }
+      }
+    
 }
 
-/* Mobile Layout */
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 768px) {
     .burger-menu {
         display: flex;
         flex-direction: column;
@@ -237,25 +153,25 @@ header.hero-header {
     }
 
     .hyperlinks {
-        display: none;
-        flex-direction: column;
+        display: none;            
+        flex-direction: column;   
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
         padding: 20px 0;
         text-align: center;
         position: fixed;
-        top: 0;
+        top: 0;  
         right: 0;
         z-index: 1000;
     }
 
     .hyperlinks.show {
-        display: flex;
+        display: flex;  
     }
 
     .hyperlinks a {
-        color: white;
-        text-decoration: none;
+        color: white;          
+        text-decoration: none; 
         font-size: 18px;
         padding: 10px 0;
     }
@@ -265,24 +181,25 @@ header.hero-header {
     }
 
     .burger-menu.open span:nth-child(1) {
-        transform: rotate(45deg) translate(7.5px, 9px);
+        transform: rotate(45deg) translate(7.5px, 9px); 
     }
 
     .burger-menu.open span:nth-child(2) {
-        opacity: 0;
+        opacity: 0;  
     }
 
     .burger-menu.open span:nth-child(3) {
-        transform: rotate(-45deg) translate(11px, -13px);
+        transform: rotate(-45deg) translate(11px, -13px); 
     }
 
     .hero-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center;  
         align-items: center;
-        height: 100%;
+        height: 100%; 
         padding: 0% 0% 3% 2%;
+        
     }
 
     .register-btn-container {
@@ -292,7 +209,7 @@ header.hero-header {
 
     .register-btn {
         display: inline-block;
-        background-color: #ff7f50;
+        background-color: #ff7f50;  
         color: white;
         padding: 12px 24px;
         font-size: 1.2rem;
@@ -322,7 +239,7 @@ header.hero-header {
         padding-left: 2.5%;
         padding-top: 3%;
     }
-
+    
     .mh-logo {
         max-height: 50px;
         width: auto;
@@ -335,323 +252,17 @@ header.hero-header {
         align-items: center;
         margin-top: 15px;
         text-align: center;
-        color: #ffff;
+        color: #ffff; 
         font-family: 'Rubik', serif;
         font-weight: 500;
     }
-
-    .location,
-    .date {
+    
+    .location, .date {
         font-size: 20px;
         margin: 0;
     }
-
-    .countdown-container {
-        display: none; /* Hides the entire countdown timer container */
-      }
-}
-
-/* Transition Divider */
-.transition-divider {
-    background-color: #162635;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
-    height: 80px;
-    margin: 0;
-}
-
-/* About Section */
-.about-section {
-    background: linear-gradient(to bottom, #162635, #162635); 
-    color: white;
-    padding: 60px 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
-    border-radius: 0; 
-    box-shadow: none; 
-}
-
-.about-section h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.card {
-    background: #1d2b3a; 
-    padding: 30px;
-    width: 280px;
-    height: auto;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6); 
-}
-
-.card .icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #f9c74f; 
-}
-
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: white;
-}
-
-.card p {
-    font-size: 1rem;
-    color: #d6d6d6;
-    line-height: 1.5;
 }
 
 
-/* Fade-In Animation */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Schedule Code */
-.schedule-section {
-    background-color: #162635; 
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.schedule-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: white;
-}
-
-/* Timeline Styling */
-.timeline-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* This makes two columns */
-    gap: 40px;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-.timeline-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* This puts a space between events */
-}
-
-.event {
-    position: relative;
-    padding: 20px;
-    background-color: #1d2b3a; 
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease; 
-    text-align: center; /* This puts the text in the middle in the boxes */
-    margin-bottom: 20px; /* This puts a space between each box btw */
-}
-
-.event:hover {
-    transform: scale(1.05); /* This creates a hover effect on the timeline boxes btw Slightly enlarge the box on hover */
-    background-color: #243b4d; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
-}
-
-
-.event h3 {
-    margin: 0 auto;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white; 
-}
-
-.event .time {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: white; 
-    margin-bottom: 8px;
-    margin-top: 8px; 
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .timeline-container {
-        grid-template-columns: 1fr; /* This makes it one column if it is like a small screen*/
-    }
-}
-/* Speakers Section */
-.speakers-section {
-    background-color: #162635; 
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-  
-.speakers-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: white;
-}
-  
-/* Container for the speaker cards */
-.speakers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-  
-/* Individual speaker card */
-.speaker-card {
-    background-color: #1d2b3a;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-  
-.speaker-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-}
-  
-/* Speaker photo styling */
-.speaker-photo {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    max-height: 200px; 
-    object-fit: cover;
-}
-  
-/* Speaker details */
-.speaker-card h3 {
-    margin: 10px 0 5px 0;
-    font-size: 1.5rem;
-    color: #f9c74f; 
-}
-  
-.speaker-title {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #d6d6d6;
-    margin-bottom: 10px;
-}
-  
-.speaker-bio {
-    font-size: 0.9rem;
-    color: #d6d6d6;
-    line-height: 1.5;
-}
-  
-/* FAQ Section */
-.faq-section {
-    background-color: #162635;
-    color: #162635;
-    padding: 60px 20px;
-    text-align: center;
-}
-  
-.faq-section h1 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    color: white;
-}
-  
-/* FAQ Carousel */
-.faq-carousel {
-    display: flex;
-    gap: 30px;
-    transition: transform 0.5s ease-in-out;
-    overflow: visible; 
-}
-  
-.faq-card {
-    background-color:#1d2b3a;
-    color: white;
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    flex-shrink: 0; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);    
-    text-align: center;
-    transform-origin: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-  .faq-card.center {
-    transform: scale(1.1); 
-    z-index: 1; 
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-  
-.faq-card:not(.center) {
-    transform: scale(0.9); 
-    opacity: 0.6; 
-}
-  
-.faq-carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-  
-  .faq-carousel-wrapper {
-    overflow: hidden;
-    max-width: 900px;
-    width: 100%;
-}
-  
-  
-/* Arrows */
-.arrow-btn {
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-  
-.arrow-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-  
-.arrow-btn span {
-    font-size: 1.5rem;
-    color: #162635;
-}
-  
-  
-  
-  
   
